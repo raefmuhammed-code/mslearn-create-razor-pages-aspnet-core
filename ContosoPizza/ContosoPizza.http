@@ -1,0 +1,26 @@
+### Get all pizzas
+GET https://localhost:5001/api/pizzas
+
+### Get a specific pizza
+GET https://localhost:5001/api/pizzas/1
+
+### Create a new pizza
+POST https://localhost:5001/api/pizzas
+Content-Type: application/json
+
+{
+  "name": "Margherita",
+  "isGlutenFree": false
+}
+
+### Update an existing pizza
+PUT https://localhost:5001/api/pizzas/1
+Content-Type: application/json
+
+{
+  "name": "Updated Pepperoni",
+  "isGlutenFree": true
+}
+
+### Delete a pizza
+DELETE https://localhost:5001/api/pizzas/1
